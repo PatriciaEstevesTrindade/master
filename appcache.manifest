@@ -1,0 +1,28 @@
+CACHE MANIFEST
+
+
+CACHE:
+./files.json
+./index.html
+./storyline.html
+./manifest.json
+./css/main.css
+./icons/MaterialIcons-Regular.ttf
+./icons/material.css
+./img/icon2.png
+./js/install.js
+./js/main.js
+./js/spa.js
+./js/vendor/jquery.min.js
+./js/vendor/materialize-0.97.0.min.js
+./js/vendor/quagga.min.js
+
+
+NETWORK:
+*
+
+
+SETTINGS:
+prefer-online
+
+# hash: 5bb26e876b0097e53cf3b4fc6efffac33ceb68cac1983a6c4518f6f97dc10372
