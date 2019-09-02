@@ -1,3 +1,4 @@
+var CACHE_NAME = 'pauapixel';
 var files = [
   "index.html",
   "storyline.html",
@@ -23,7 +24,6 @@ if (typeof files == 'undefined') {
   files.push('./');
 }
 
-var CACHE_NAME = 'pauapixel';
 
 self.addEventListener('activate', function(event) {
   console.log('[SW] Activate');
@@ -45,14 +45,10 @@ self.addEventListener('install', function(event){
   console.log('[SW] Install');
   event.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
-      return Promise.all(
-      	files.map(function(file){
-      		return cache.add(file);
-      	})
-      );
-    })
+      		return cache.addAll(file);
+  	})
   );
-});
+})
 
 self.addEventListener('fetch', function(event) {
   console.log('[SW] fetch ' + event.request.url)
@@ -62,6 +58,7 @@ self.addEventListener('fetch', function(event) {
     })
   );
 });
+
 
 self.addEventListener('notificationclick', function(event) {
   console.log('On notification click: ', event);
