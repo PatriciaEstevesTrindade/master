@@ -45,7 +45,7 @@ self.addEventListener('install', function(event){
   console.log('[SW] Install');
   event.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
-      		return cache.addAll(file);
+      		return cache.addAll(files);
   	})
   );
 })
