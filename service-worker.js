@@ -12,6 +12,8 @@ var files = [
   "js/spa.js",
   "js/vendor/jquery.min.js",
   "js/vendor/materialize-0.97.0.min.js",
+  "js/vendor/materialize.min.css",
+  "js/vendor/materialize.min.js",
   "js/vendor/quagga.min.js"
 ];
 // dev only
@@ -21,7 +23,7 @@ if (typeof files == 'undefined') {
   files.push('./');
 }
 
-var CACHE_NAME = 'pauapixel-v1';
+var CACHE_NAME = 'pauapixel';
 
 self.addEventListener('activate', function(event) {
   console.log('[SW] Activate');

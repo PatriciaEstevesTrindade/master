@@ -11,5 +11,7 @@ var files = [
   "js/spa.js",
   "js/vendor/jquery.min.js",
   "js/vendor/materialize-0.97.0.min.js",
+  "js/vendor/materialize.min.css",
+  "js/vendor/materialize.min.js",
   "js/vendor/quagga.min.js"
 ];
