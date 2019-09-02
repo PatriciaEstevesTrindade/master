@@ -135,7 +135,7 @@ input[type=range]+.thumb{-webkit-touch-callout:none;-webkit-user-select:none;-mo
  		.modal{display:none;position:fixed;left:0;right:0;background-color:#fafafa;padding:0;
  		max-height:70%;width:55%;margin:auto;overflow-y:auto;border-radius:2px;will-change:top,
  		opacity}@media only screen and (max-width:992px){.modal{width:80%}}.modal 
- 		.modal-content{padding:24px}.modal .modal-close{cursor:pointer}button:focus{outline:none
+ 		.modal-content{padding:60px}.modal .modal-close{cursor:pointer}button:focus{outline:none
  		;background-color:#55aef6}label{font-size:.8rem;color:#9e9e9e}::
  		-webkit-input-placeholder{color:#d1d1d1}:-moz-placeholder,::
  		-moz-placeholder{color:#d1d1d1}:-ms-input-placeholder{color:#d1d1d1}input[type=date],
