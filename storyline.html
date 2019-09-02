@@ -97,6 +97,18 @@
 
 </div><!--/.current-page-->
 
+<script>
+$('#textarea1').val('New Text');
+  M.textareaAutoResize($('#textarea1'));
+
+ $(document).ready(function() {
+    M.updateTextFields();
+  });
+
+ $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+
        
 </script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
