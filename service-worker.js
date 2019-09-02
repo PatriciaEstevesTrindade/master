@@ -1,4 +1,4 @@
-var CACHE_NAME = 'pauapixel';
+
 var files = [
   "index.html",
   "storyline.html",
@@ -24,6 +24,7 @@ if (typeof files == 'undefined') {
   files.push('./');
 }
 
+var CACHE_NAME = 'pauapixel';
 
 self.addEventListener('activate', function(event) {
   console.log('[SW] Activate');
