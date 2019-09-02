@@ -1,13 +1,13 @@
 if ('serviceWorker' in navigator) {
-  
-  navigator.serviceWorker.register('service-worker.js', {
-    scope: './'
-  }).then(function(registration) {
-    if (typeof registration.update == 'function') {
-      registration.update();
-    }
-  }).catch(function(e) {
-    console.error('Error during service worker registration:', e);
-  });
-  
+	window.addEventListener('load',function(){
+		navigator.serviceWorker.register('service-worker.js', {
+    scope: './'}).then(function(registration){
+			//Registration was successful
+			console.log('serviceWorker registration successful with scope:', registration.scope);
+		}, function(err){
+			//Registration failed
+			console.log('serviceWorker registration failed', err);
+		})
+	})
+   
 }
